@@ -1,3 +1,6 @@
+/// @func TryToMarry()
+/// @desc look for a viable spouse, if you're up to it
+
 if (irandom_range(1, 3) == 1)
 {
 	if (!mourning)

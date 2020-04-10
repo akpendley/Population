@@ -1,6 +1,4 @@
 /// @description update simulation
-
-
 if (global.simulating)
 {
 	ResetLog();
@@ -13,8 +11,6 @@ if (global.simulating)
 	Log("***************************");
 	Log("");
 
-	var humans = ds_list_create();
-
 	if (instance_number(oHuman) == 0)
 	{
 		Log("All humans have perished. Everything is still.");
@@ -23,6 +19,7 @@ if (global.simulating)
 	else
 	{
 		LogCensus();
+		// output all relation data of heads of household
 	}
 
 	Log("--------------- Events -----------------");
@@ -38,6 +35,7 @@ if (global.simulating)
 
 	if (global.year >= simulationEndYear)
 	{
+		// we're done with the simulation, shut down (this will change)
 		game_end();
 	}
 }

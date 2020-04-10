@@ -1,4 +1,4 @@
-// draw log window
+// draw log window (WIP, want to make the width and height resizable in game)
 
 // draw rectangle background
 draw_set_color(c_white);
