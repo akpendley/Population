@@ -1,0 +1,1 @@
+global.simulating = false;
