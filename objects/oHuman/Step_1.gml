@@ -1,4 +1,4 @@
-/// @description Death
+/// @description death
 if (global.simulating)
 {
 	CheckDeathOdds(age);

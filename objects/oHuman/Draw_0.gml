@@ -1,5 +1,8 @@
+/// @description face
+
 if (sprite_index == -1)
 {
+	// if the face hasn't been set yet do it now to avoid drawing a non-existing sprite (fatal error)
 	sprite_index = GetAgedFace(face, age);
 }
 else

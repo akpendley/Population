@@ -4,13 +4,20 @@
 /// @arg relation (string) string 
 
 var root = argument0;
+// id
+
 var relation = argument1;
+// string
 
 for (var i = 0; i < ds_list_size(root.relatives); i++)
 {
+	// loop through the relatives list of the root
 	var r = root.relatives[| i];
+	// array, see "oHuman - Create"
+	
 	if r[1] == relation
 	{
+		// found a match return the id
 		return r[0];
 	}
 }

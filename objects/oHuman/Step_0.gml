@@ -1,15 +1,15 @@
-/// @description Life
+/// @description life
 // basic movement to head of household
-		if (headOfHousehold != id && instance_exists(headOfHousehold) && !dragging)
-		{
-			x += ((headOfHousehold.x + lengthdir_x(offsetLength, offsetDirection)) - x) * 0.2;
-			y += ((headOfHousehold.y + lengthdir_y(offsetLength, offsetDirection)) - y) * 0.2;	
-		}
-		if (dragging)
-		{
-			x += (mouse_x - x) * 0.2;
-			y += (mouse_y - y) * 0.2;	
-		}
+if (headOfHousehold != id && instance_exists(headOfHousehold) && !dragging)
+{
+	x += ((headOfHousehold.x + lengthdir_x(offsetLength, offsetDirection)) - x) * 0.2;
+	y += ((headOfHousehold.y + lengthdir_y(offsetLength, offsetDirection)) - y) * 0.2;	
+}
+if (dragging)
+{
+	x += (mouse_x - x) * 0.2;
+	y += (mouse_y - y) * 0.2;	
+}
 		
 if (global.simulating)
 {

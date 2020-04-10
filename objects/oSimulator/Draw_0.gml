@@ -1,3 +1,5 @@
+/// @description UI
+
 // draw log window (WIP, want to make the width and height resizable in game)
 
 // draw rectangle background

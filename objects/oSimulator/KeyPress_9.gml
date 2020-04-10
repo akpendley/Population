@@ -1,3 +1,5 @@
+/// @description adjust simulation speed
+
 if (keyboard_check(vk_shift))
 {
 	simulateSpacer *= 2;
